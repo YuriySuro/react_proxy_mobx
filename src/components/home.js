@@ -23,9 +23,9 @@ class Home extends React.PureComponent {
                         onChange={this.onChangeName} 
                     />
                 </Form.Group>
-                <Link to="/office" className="btn btn-primary">
+                {userStore.isValid() && <Link to="/office" className="btn btn-primary">
                     Enter
-                </Link>
+                </Link>}
             </Form>
         </div>
     }

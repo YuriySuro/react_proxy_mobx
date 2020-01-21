@@ -6,5 +6,8 @@ export default {
     }),
     setName(name) {
         this.user.name = name;
+    },
+    isValid() {
+        return this.user.name !== '';
     }
 }
